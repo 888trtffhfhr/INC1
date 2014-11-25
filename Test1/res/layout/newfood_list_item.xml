@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+        <com.meg7.widget.CustomShapeImageView
+            app:shape="circle"
+            android:id="@+id/iv_user"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher" />
+        <Button
+            android:id="@+id/bt_actionbtn_titleNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@color/juhong"
+            android:textColor="@color/white"
+            android:text="+关注" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_title"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:alpha="0.6"
+            android:text="5分前" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/bt_actionbtn_titleNormal"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/tv_desc"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/iv_user"
+            android:text="title"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp" />
+    </RelativeLayout>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/grey"
+	    />
+    <ImageView
+        android:id="@+id/iv_pic_url"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitXY"
+         />
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"
+	    >
+		<ImageView
+		    android:id="@+id/imageView5"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="17dp"
+		    android:src="@drawable/ic_location" />
+		<TextView
+		    android:id="@+id/tv_location"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_toRightOf="@+id/imageView5"
+		    android:text="location" />
+	</RelativeLayout>
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       	android:layout_marginLeft="20dp"
+       android:background="@drawable/biankuang"
+        android:text="我是呵呵" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp">
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/biankuang"
+            android:src="@drawable/btn_more" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_alignParentBottom="true"
+            android:background="@color/red"
+            android:drawableLeft="@drawable/btn_like_normal"
+            android:paddingLeft="10dp"
+            android:text="53"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/button2"
+            android:background="@drawable/biankuang" 
+            android:paddingLeft="10dp" 
+            android:text="38"         
+            android:drawableLeft="@drawable/btn_comment" />
+        <com.meg7.widget.CustomShapeImageView
+            app:shape="circle"
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+</LinearLayout>

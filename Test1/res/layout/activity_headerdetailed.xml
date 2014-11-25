@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:background="@color/divider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     xmlns:gpb="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    	<RelativeLayout 
+    	android:id="@+id/headerview"
+	    android:gravity="center_vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:background="@color/header"
+	    android:orientation="horizontal"
+	    >
+	    	<Button 
+	    	    android:drawableLeft="@drawable/bar_return"
+	    	android:background="@drawable/b2c_detail_btn_red"
+	        android:id="@+id/back"
+	        android:clickable="true"
+	       	android:text="活动详情"
+	       	android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	       	android:textSize="15sp"
+	       	android:layout_gravity="center|left"
+	       	android:textColor="#ffffff"
+	        />
+	    	<Button
+	    	    android:background="@drawable/btn_buy_film_unselected"
+	    	    android:layout_alignParentRight="true"
+	    	    android:layout_marginRight="10dp"
+	        android:id="@+id/invite"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:clickable="true"
+	        android:layout_gravity="center|right"
+	        android:text="邀请"
+	        android:textColor="#ffffff"
+	        android:textSize="15sp" />
+		</RelativeLayout>
+		<FrameLayout 
+		android:layout_below="@id/headerview"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    >
+	    	<com.widget.ZrcListView
+				android:layout_below="@id/headerview"
+				android:dividerHeight="10dp"
+				android:divider="@color/divider"
+				android:layout_margin="10dp"
+			    android:id="@+id/listview"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:scrollbars="none"
+	   	 	/>
+	    <ImageView
+	         android:focusable="true"
+	        android:id="@+id/background"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#ffffff"
+	        android:visibility="gone"
+	     />
+	    <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+        android:id="@+id/google_progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        gpb:type="folding_circles" ></com.jpardogo.android.googleprogressbar.library.GoogleProgressBar>
+	</FrameLayout>
+			
+</RelativeLayout>

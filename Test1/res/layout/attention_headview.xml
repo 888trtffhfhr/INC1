@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv1_headview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitXY"
+         />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/tv1_headview"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="还有3天结束"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tV2_headview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="需找12星系专属"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:alpha="0.6"
+        android:background="#ffffff"
+        android:id="@+id/tv1_headview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tV2_headview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="c24324人参加"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/iv1_headview"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal" 
+        android:padding="5dp"
+        >
+
+        <Button
+            android:layout_margin="3dp"
+            android:id="@+id/foodList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/account_bottom_normal"
+            android:textColor="@color/white"
+            android:text="食单" />
+
+        <Button
+            android:layout_margin="3dp"
+            android:background="@drawable/alltype_normal"
+            android:id="@+id/activityList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="活动" />
+
+        <Button
+            android:layout_margin="3dp"
+            android:background="@drawable/ampm_end_time_bg"
+            android:id="@+id/personList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="达人榜" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:id="@+id/tv3_headview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="21dp"
+        android:text="当前城市" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+      <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_title_huodong"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="做一个会拍的幸福饭团" 
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/order_blue"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_desc_huodong"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="11月结束" 
+            android:textSize="7sp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55dp"
+            android:src="@drawable/ic_rightarrow" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+        <ImageView 
+            android:id="@+id/iv1_huodong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="fitXY"
+            />
+        <ImageView 
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv2_huodong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="fitXY"
+            />
+        <ImageView 
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv3_huodong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="fitXY"
+            />
+        </LinearLayout>
+    
+
+</LinearLayout>

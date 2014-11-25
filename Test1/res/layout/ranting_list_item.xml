@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <TextView
+            android:id="@+id/tv_name_darenbang"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_avatar_darenbang"
+            android:textSize="10sp"
+            android:text="五项老衲" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:text="+关注" 
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_icon_darenbang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/iv_avatar_darenbang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_desc_darendbang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_avatar_darenbang"
+            android:layout_alignLeft="@+id/tv_name_darenbang"
+            android:text="来自北京" 
+            android:textSize="8sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

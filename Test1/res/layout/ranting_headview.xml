@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/huibai"
+    >
+
+ 
+    <TextView
+        android:id="@+id/tv_title_titlecard"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/ic_rightarrow"
+        android:paddingRight="20dp"
+        android:text="申请食色达人" />
+
+    <TextView
+        android:id="@+id/tv_title_SeparatorCard"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@color/shenghui"
+        android:text="达人评选" />
+
+</LinearLayout>

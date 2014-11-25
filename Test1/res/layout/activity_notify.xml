@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/header"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ssdk_back_arr" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="消息中心"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="朕已阅"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ListView
+        android:divider="@color/divider"
+        android:dividerHeight="10dp"
+        android:id="@+id/listview"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/header" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listview"
+        android:layout_margin="10dp"
+        android:alpha="0.7"
+        android:text="最近联系人"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/last"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/line"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/ic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_watermark_shop" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ic"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ic"
+            android:alpha="0.8"
+            android:text="食色"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignBottom="@id/text"
+            android:layout_toRightOf="@id/text"
+            android:src="@drawable/icon_rank_4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/text"
+            android:layout_below="@id/text"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            android:text="棒呆了，你终会找到吃货组织啦，先去..."
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/last"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.5"
+        android:text=" ———— ————The End———— ———— " />
+
+</RelativeLayout>
